@@ -222,7 +222,7 @@ public class UserLayoutUtil {
 
         ServiceContext serviceContext = new ServiceContext();
 
-        Layout layout = LayoutLocalServiceUtil.addLayout(
+        Layout layout = LayoutLocalServiceUtil.addLayout(null,
             userId, groupId, true, LayoutConstants.DEFAULT_PARENT_LAYOUT_ID,
             PropsValues.DEFAULT_USER_PRIVATE_LAYOUT_NAME, StringPool.BLANK,
             StringPool.BLANK, LayoutConstants.TYPE_PORTLET, false, friendlyURL,
@@ -384,7 +384,7 @@ public class UserLayoutUtil {
 
         ServiceContext serviceContext = new ServiceContext();
 
-        Layout layout = LayoutLocalServiceUtil.addLayout(
+        Layout layout = LayoutLocalServiceUtil.addLayout(null,
             userId, groupId, false, LayoutConstants.DEFAULT_PARENT_LAYOUT_ID,
             PropsValues.DEFAULT_USER_PUBLIC_LAYOUT_NAME, StringPool.BLANK,
             StringPool.BLANK, LayoutConstants.TYPE_PORTLET, false, friendlyURL,

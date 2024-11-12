@@ -120,11 +120,11 @@
                     String progressSessionKey = ProgressTracker.PERCENT + progressId;
                     request.setAttribute("liferay-document-library:progress:sessionKey", progressSessionKey);
                 %>
-                <liferay-document-library:upload-progress
+                <!-- <liferay-document-library:upload-progress
                         id="<%= progressId %>"
                         message="creating..."
                         height="20"
-                />
+                /> -->
 
             </aui:fieldset>
         </div>

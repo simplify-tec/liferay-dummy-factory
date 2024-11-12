@@ -50,8 +50,10 @@ public class PageDefaultDummyGenerator extends DummyGenerator<PageContext> {
 			}
 
 			try {
+
+
 				_layoutLocalService.addLayout(
-					paramContext.getServiceContext().getUserId(), 
+					null, paramContext.getServiceContext().getUserId(),
 					paramContext.getGroupId(), //groupId
 					paramContext.isPrivateLayout(), //privateLayout
 					paramContext.getParentLayoutId(), //parentLayoutId
@@ -60,6 +62,7 @@ public class PageDefaultDummyGenerator extends DummyGenerator<PageContext> {
 					StringPool.BLANK, //descriptionMap
 					paramContext.getLayoutType(), //type
 					paramContext.isHidden(), //hidden
+						false,
 					StringPool.BLANK, //friendlyURL
 					paramContext.getServiceContext()); //serviceContext
 				
